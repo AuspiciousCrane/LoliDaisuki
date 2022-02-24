@@ -39,9 +39,9 @@ class DrawingWindow(QWidget):
         canvasPainter = QPainter(self)
         canvasPainter.drawImage(self.rect(), self.image, self.image.rect())
 
-#    def clear(self):
-#        self.image.fill(Qt.white)
-#        self.update()
+    def clear(self):
+       self.image.fill(Qt.white)
+       self.update()
 
 class SimplePaintProgram(QWidget):
     def __init__(self):
