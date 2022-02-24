@@ -31,8 +31,3 @@ class Disk(object):
         pass
 
 
-if __name__ == "__main__":
-    d = Disk(xpos = 100, ypos = 0)
-    d.showdisk()
-    while(1):
-        pass
