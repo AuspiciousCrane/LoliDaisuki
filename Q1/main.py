@@ -31,10 +31,16 @@ class Simple_drawing_window(QWidget):
         p.drawPixmap(QRect(200, 100, 320, 320), self.rabbit)
         p.end()
  
+class Simple_drawing_window3(Simple_drawing_window):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Simple Drawing 3")
+        self.rabbit = QPixmap("images/gitlab-icon-rgb.png")
+
 def main():
     app = QApplication(sys.argv)
  
-    w = Simple_drawing_window()
+    w = Simple_drawing_window3()
     w.show()
 
     return app.exec_()
