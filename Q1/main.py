@@ -35,19 +35,25 @@ class Simple_drawing_window3(Simple_drawing_window):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Simple Drawing 3")
-        self.rabbit = QPixmap("images/gitlab-icon-rgb.png")
+        self.rabbit = QPixmap("Q1/images/gitlab-icon-rgb.png")
 
 class Simple_drawing_window2(Simple_drawing_window):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Simple Drawing 2")
-        self.rabbit = QPixmap("images/play_icon.png")
+        self.rabbit = QPixmap("Q1/images/play_icon.png")
 
 class Simple_drawing_window1(Simple_drawing_window):
     def __init__(self):
         QWidget.__init__(self,None)
         self.setWindowTitle("Simple drawing 1")
         self.gun = QPixmap("Q1\images\gun.png")
+
+        self.drawing2 = Simple_drawing_window2()
+        self.drawing3 = Simple_drawing_window3()
+
+        self.drawing2.show()
+        self.drawing3.show()
         
     def paintEvent(self, e):
         p = QPainter()
