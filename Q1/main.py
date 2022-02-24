@@ -41,7 +41,7 @@ class Simple_drawing_window2(Simple_drawing_window):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Simple Drawing 2")
-        self.rabbit = QPixmap("Q1\images\play_icon.png")
+        self.rabbit = QPixmap("images/play_icon.png")
 
 class Simple_drawing_window1(Simple_drawing_window):
     def __init__(self):
