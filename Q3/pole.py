@@ -39,6 +39,4 @@ class Pole(object):
 
         outputdisk.newpos(self.pxpos, self.toppos)
         outputdisk.cleardisk()
-
-myPole = Pole()
-myPole.showpole()
+        return outputdisk

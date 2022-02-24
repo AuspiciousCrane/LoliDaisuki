@@ -7,24 +7,21 @@ class Disk(object):
         self.dypos = ypos
         self.dheight = height
         self.dwidth = width
-        self.rect = turtle.Turtle()
+        
 
     def showdisk(self):
-        screen = self.rect.getscreen()
-        self.rect.setheading(0)
-        self.rect.penup()
-        self.rect.goto(self.dxpos, self.dypos)
-        self.rect.pendown()
+        #screen = self.rect.getscreen()
+        turtle.setheading(0)
+        turtle.penup()
+        turtle.goto(self.dxpos, self.dypos)
+        turtle.pendown()
 
-        self.rect.begin_fill()
         for i in range(2):
-            self.rect.forward(self.dwidth / 2)
-            self.rect.lt(90)
-            self.rect.forward(self.dheight)
-            self.rect.lt(90)
-            self.rect.forward(self.dwidth / 2)
-        self.rect.end_fill()
-
+            turtle.forward(self.dwidth / 2)
+            turtle.lt(90)
+            turtle.forward(self.dheight)
+            turtle.lt(90)
+            turtle.forward(self.dwidth / 2)
 
 
     def newpos(self, xpos, ypos):
@@ -33,8 +30,20 @@ class Disk(object):
 
 
     def cleardisk(self):
-        self.rect.setheading(0)
-        self.rect.clear()
-        # self.rect.done()
+        turtle.setheading(0)
+        turtle.penup()
+        turtle.goto(self.dxpos, self.dypos)
+        turtle.pendown()
+        turtle.color("white","white")
+        
+        for i in range(2):
+            turtle.forward(self.dwidth / 2)
+            turtle.lt(90)
+            turtle.forward(self.dheight)
+            turtle.lt(90)
+            turtle.forward(self.dwidth / 2)
+
+        turtle.color("black","white")
+        
 
 
