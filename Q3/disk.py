@@ -38,9 +38,3 @@ class Disk(object):
         # self.rect.done()
 
 
-if __name__ == "__main__":
-    d = Disk(xpos = 100, ypos = 0)
-    d.showdisk()
-    # d.cleardisk()
-    while(1):
-        pass
